@@ -1,12 +1,12 @@
-@import './normalize';
-@import './reset';
-@import './variables';
-@import './typography';
-@import './layout';
+@import './_normalize.scss';
+@import './_reset.scss';
+@import './_variables.scss';
+@import './_typography.scss';
+@import './_layout.scss';
 
 // COMPONENTS
-@import '../components/footer/footer';
-@import '../components/header/header';
+@import '../components/footer/_footer.scss';
+@import '../components/navbar/_navbar.scss';
 
 // PAGES
-@import '../components/homepage/homepage';
+@import '../components/homepage/_homepage.scss';

@@ -1,11 +1,16 @@
+import React, { useEffect, useState } from 'react';
 import Footer from '../footer/footer';
-import Header from '../header/header';
-import css from '../../scss/styles.scss';
+import Navbar from '../navbar/navbar';
+import '../../scss/styles.scss';
 
-const Layout = ({ children, pageName }) => {
+const Layout = ({ children, stopScroll, pageName }) => {
+  const [noScroll, setNoScroll] = useState(false);
+  useEffect(() => {
+    setNoScroll(stopScroll);
+  }, [stopScroll]);
   return (
-    <div className={`layout ${pageName}`}>
-      <Header />
+    <div id="layout" className={`layout ${pageName}${noScroll ? ' no_scroll' : ''}`}>
+      <Navbar setNoScroll={() => setNoScroll(!noScroll)} />
       {children}
       <Footer />
     </div>
