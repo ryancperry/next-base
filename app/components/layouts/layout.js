@@ -8,6 +8,7 @@ const Layout = ({ children, stopScroll, pageName }) => {
   useEffect(() => {
     setNoScroll(stopScroll);
   }, [stopScroll]);
+
   return (
     <div id="layout" className={`layout ${pageName}${noScroll ? ' no_scroll' : ''}`}>
       <Navbar setNoScroll={() => setNoScroll(!noScroll)} />

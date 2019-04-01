@@ -1,0 +1,14 @@
+.banner {
+  background-color: var(--gray-10);
+  padding: 5rem 2rem;
+  text-align: center;
+  &_headline {
+    color: var(--gray-70);
+    font-size: 3.5rem;
+    font-weight: 500;
+  }
+  &_subhead {
+    color: var(--gray-50);
+    font-size: 2rem;
+  }
+}
