@@ -5,6 +5,7 @@ import '../../scss/styles.scss';
 
 const Layout = ({ children, stopScroll, pageName }) => {
   const [noScroll, setNoScroll] = useState(false);
+
   useEffect(() => {
     setNoScroll(stopScroll);
   }, [stopScroll]);
