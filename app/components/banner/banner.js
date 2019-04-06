@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default () => {
+const Banner = () => {
   return (
     <header className="banner">
       <h1 className="banner_headline">Banner Headline</h1>
@@ -8,3 +8,5 @@ export default () => {
     </header>
   );
 };
+
+export default Banner;

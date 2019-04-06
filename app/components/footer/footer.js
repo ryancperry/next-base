@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-export default () => {
+const Footer = () => {
   return (
     <footer>
       <p>Footer content goes here.</p>
@@ -12,3 +12,5 @@ export default () => {
     </footer>
   );
 };
+
+export default Footer;

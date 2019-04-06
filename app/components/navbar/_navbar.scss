@@ -92,7 +92,8 @@
     padding: 0.25rem;
     width: 2rem;
     &_icon {
-      fill: rgba(0,0,0,0.8);
+      max-height: 1.5rem;
+      max-width: 1.5rem;
     }
   }
 }
